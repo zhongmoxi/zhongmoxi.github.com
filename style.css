@@ -1,0 +1,605 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #73252F url(images/main-background-bg.png) repeat;
+	font-family: 'Abel', sans-serif;
+	font-size: 14px;
+	color: #383838;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	color: #221D1D;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #AE4D5A;
+}
+
+a:hover {
+}
+
+#wrapper {
+	padding: 0;
+	background: url(images/main-image-bg.jpg) no-repeat center top;
+}
+
+/* Header */
+
+#header-wrapper {
+	overflow: hidden;
+	height: 300px;
+	background: url(images/header-wrapper-bg.png) repeat-x left top;
+}
+
+#header {
+	overflow: hidden;
+	width: 950px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 254px;
+	height: 300px;
+	margin: 0px auto;
+	padding: 135px 0 0 0;
+	background: url(images/logo-bg.png) no-repeat left top;
+	color: #FFFFFF;
+}
+
+#logo h1, #logo p {
+	margin: 0;
+	padding: 0;
+}
+
+#logo h1 {
+	letter-spacing: -1px;
+	text-align: center;
+	text-transform: lowercase;
+	font-size: 3.8em;
+}
+
+#logo p {
+	margin-top: -10px;
+	padding: 0 0 0 10px;
+	text-align: center;
+	font-size: 15px;
+	color: #FFFFFF;
+} 
+
+#logo p a {
+	color: #FFFFFF;
+}
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 280px;
+	height: 60px;
+	padding: 20px 0px 0px 0px;
+	background: #323435;
+	border-bottom: 4px solid #0974C4;
+}
+
+#search form {
+	height: 41px;
+	margin: 0;
+	padding: 10px 0 0 20px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search-text {
+	width: 170px;
+	padding: 6px 5px 2px 5px;
+	border: none;
+	background: #FFFFFF;
+	text-transform: lowercase;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #464032;
+}
+
+#search-submit {
+	width: 50px;
+	height: 23px;
+	border: 1px solid #525252;
+	background: #525252;
+	font-weight: bold;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu1 {
+	float: left;
+	width: 348px;
+	height: 300px;
+}
+
+#menu1 ul {
+	float: right;
+	margin: 0px;
+	padding: 150px 0px 0px 0px;
+	list-style: none;
+}
+
+#menu1 li {
+	float: left;
+	margin: 0px 30px;
+}
+
+#menu1 a {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-family: 'Abel', sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+#menu2 {
+	float: right;
+	width: 348px;
+}
+
+#menu2 ul {
+	float: left;
+	margin: 0px;
+	padding: 150px 0px 0px 0px;
+	list-style: none;
+}
+
+#menu2 li {
+	float: left;
+	margin: 0px 30px;
+}
+
+#menu2 a {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-family: 'Abel', sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+
+#menu {
+	overflow: hidden;
+	width: 940px;
+	padding: 15px 0px;
+	margin: 0px auto 30px auto;
+	background: #006BC2;
+	border-radius: 10px;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+#menu ul {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+
+#menu li {
+	display: inline-block;
+	border-right: 1px solid #001DD6;
+}
+
+#menu a {
+	display: block;
+	padding: 0px 40px 0px 40px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	font-weight:400;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+}
+
+#menu .current_page_item a {
+	color: #FFFFFF;
+}
+
+#menu .last {
+	border-right: none;
+}
+
+/* Page */
+
+#page {
+	width: 920px;
+	margin: 0 auto;
+	padding: 0px 40px;
+	background: rgba(0,0,0,.3);
+	color: #F6F6F6
+}
+
+#page-bgtop {
+	padding: 20px 0px;
+}
+
+#page-bgbtm {
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 600px;
+	padding: 10px 0px 0px 0px;
+}
+
+.post {
+}
+
+.post .title {
+	margin-bottom: 10px;
+	padding: 12px 0px 20px 0px;
+	letter-spacing: -.5px;
+	color: #FFFFFF;
+}
+
+.post .title a {
+	color: #FFFFFF;
+	border: none;
+}
+
+.post .meta {
+	height: 30px;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.post .meta .date {
+	float: left;
+	height: 24px;
+	padding: 3px 15px;
+	color: #BBBBBB;
+}
+
+.post .meta .posted {
+	float: right;
+	height: 24px;
+	padding: 3px 15px;
+	color: #BBBBBB;
+}
+
+.post .meta a {
+	color: #BBBBBB;
+}
+
+.post .entry {
+	padding: 0px 0px 20px 0px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.links {
+	padding-top: 20px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 280px;
+	padding: 30px 0px 0px 0px;
+	color: #F6F6F6;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li ul {
+	margin: 0px 0px;
+	padding-bottom: 30px;
+}
+
+#sidebar li li {
+	line-height: 35px;
+	border-bottom: 1px dotted #873842;
+	margin: 0px 0px;
+	border-right: none;
+}
+
+#sidebar li a {
+	padding-left: 20px;
+	background: url(images/img03.gif) no-repeat left 6px;
+}
+
+#sidebar li li span {
+	display: block;
+	margin-top: -20px;
+	padding: 0;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#sidebar h2 {
+	padding: 0px 0px 30px 0px;
+	letter-spacing: -.5px;
+	font-size: 1.8em;
+	color: #F6F6F6;
+}
+
+#sidebar p {
+	margin: 0 0px;
+	padding: 10px 30px 20px 30px;
+	text-align: justify;
+}
+
+#sidebar a {
+	border: none;
+	color: #F6F6F6;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+	color: #F6F6F6;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+	padding: 20px;
+}
+
+#calendar table {
+	width: 100%;
+}
+
+#calendar tbody td {
+	text-align: center;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/* Footer */
+
+#footer {
+	height: 100px;
+	background: rgba(0,0,0,.3);
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 20px;
+	line-height: normal;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}
+
+#three-columns {
+	overflow: hidden;
+	width: 960px;
+	margin: 0px auto;
+	padding: 30px 0px;
+	color: #FFFFFF;
+}
+
+#three-columns h2 {
+	padding: 0px 0px 20px 0px;
+	font-size: 30px;
+	color: #FFFFFF;
+}
+
+#three-columns #column1 {
+	float: left;
+	width: 290px;
+	margin-right: 40px;
+}
+
+#three-columns #column2 {
+	float: left;
+	width: 290px;
+}
+
+#three-columns #column3 {
+	float: right;
+	width: 300px;
+}
+
+.link-style {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 5px 15px;
+	background: #3F181D;
+	border-radius: 10px;
+	color: #FFFFFF;
+}
+
+
+.link-style2 {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 25px;
+	background: #3F181D;
+	border-radius: 10px;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+#welcome {
+	width: 960px;
+	margin: 0px auto;
+	padding: 30px 0px;
+	color: #FFFFFF;
+}
+
+#welcome h2 {
+	padding: 0px 0px 20px 0px;
+}
+
+#welcome h2 a {
+	color: #FFFFFF;
+}
+
+#welcome a {
+	color: #FFFFFF;
+}
+
+#banner {
+	overflow: hidden;
+	width: 960px;
+	margin: 0px auto;
+	padding: 30px 0px;
+	border-bottom: 1px solid #292929;
+}
+
+
+#two-columns {
+	overflow: hidden;
+	width: 960px;
+	margin: 0px auto;
+	padding: 30px 0px;
+}
+
+#two-columns #col1 {
+	float: left;
+	width: 600px;
+	color: #FFFFFF;
+}
+
+
+#two-columns #col2 {
+	float: right;
+	width: 280px;
+	background: #FFFFFF;
+}
+
+#two-columns h2 {
+	padding: 0px 0px 20px 0px;
+	color: #FFFFFF;
+}
+
+
+#two-columns .image-style {
+	border: 10px solid #FFFFFF;
+}
+
+
+#two-columns .text-style {
+	padding-bottom: 10px;
+	border: 10px solid #FFFFFF;
+	text-align: center;
+	font-size: 20px;
+}
+
+#splash {
+	overflow: hidden;
+	width: 960px;
+	margin: 0px auto;
+	padding: 30px 0px;
+}
+
+#splash ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#splash li {
+	float: left;
+	margin-left: 17px;
+}
+
+#splash img {
+	border: 1px solid #73252F
+}
+
+#splash .first {
+	margin-left: 0px;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
