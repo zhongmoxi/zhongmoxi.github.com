@@ -8,6 +8,24 @@
 		<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 		<script type="text/javascript" src="jquery/jquery-1.4.2.min.js"></script>
 		<script type="text/javascript" src="jquery/jquery.gallerax-0.2.js"></script>
+		<script type="text/javascript">
+            $(function(){
+                var menu = $("#menu_wrapper");
+                var content = $("#content");
+                menu.live("click",function(e){
+                    e.preventDefault();
+                    var target = e.target;
+                    var href = target.href;
+                    if(href){
+                        $.ajax(href).success(function(data){
+                            content.html(data);
+                            $(".active", menu).removeClass("active");
+                            $(target.parentNode).addClass("active");
+                        });
+                    }
+                });
+            });
+        </script>
 		<style type="text/css">
 		@import "gallery.css";
 		</style>
@@ -20,7 +38,7 @@
 				<div id="header">
 					<div id="menu1">
 						<ul>
-							<li class="current_page_item"><a href="#">Homepage</a></li>
+							<li class="current_page_item"><a href="index.html">Homepage</a></li>
 							<li><a href="#">I'm Moxi</a></li>
 						</ul>
 					</div>
@@ -58,18 +76,29 @@
 					</p>
 				</div>
 			</div>
+			<div id="gap">
+			</div>
 			<div id="page">
 				<div id="page-bgtop">
 					<div id="page-bgbtm">
 						<div id="content">
 							<div class="post">
 								<h2 class="title">
-									<a href="#">一棵开花的树</a>
+									<a href="#">A premonition</a>
 								</h2>
 								<div class="entry">
 									<p>
 										<img src="images/QQ20120831-6.png" alt width="225" height="225" class="alignleft">
-										如何让我遇到你  在我最美丽的时刻  <br> 为这 我已在佛前求了五百年  求佛让我们结一段尘缘 <br> 佛於是把我化做一棵树  长在你必经的路上 <br>			
+										爱你变习惯不再稀罕 <br>
+										我们该冷静谈一谈 你说你喜欢一点点浪漫 <br>
+										却把跟随我的脚步放慢 没有你分享分担 <br>
+										我的快乐悲伤 心情天天天天纷乱 <br>
+										我一再试探你一再隐瞒 是谁改变爱情原来的模样 <br>
+										有一种预感爱就要离岸 所有回忆却慢慢碎成片断 <br>
+										不能尽欢爱总是苦短 我只想要你最后的答案 <br>
+										有一种预感想挽回太难 对你还有无可救药的期盼 <br>
+										我坐立难安望眼欲穿 <br>
+										我会永远守在灯火阑珊的地方	<br>	
 									</p>
 								</div>
 							</div>
@@ -79,11 +108,11 @@
 								<li>
 									<h2>Something about me</h2>
 									<ul>
-										<li>
-											<a href="moxige.html">「莫兮哥」</a>
+										<li class="active">
+											<a href="moxige-ajax.html">「莫兮哥」</a>
 										</li>
 										<li>
-											<a href="http://weibo.com/zhongmoxi">我 的 微 博</a>
+											<a href="#">我 的 微 博</a>
 										</li>
 										<li>
 											<a href="#">Metus aliquam pellentesque</a>
