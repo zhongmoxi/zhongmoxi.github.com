@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>CSS Menu</title>
+		<style type="text/css">
+			body {
+				padding: 50px;
+			}
+			/* The CSS Code for the menu starts here */
+			#menu {
+				font-family: Arial, sans-serif;
+				font-weight: bold;
+				text-transform: uppercase;
+				margin: 50px 0;
+				padding: 0;
+				list-style-type: none;
+				background-color: #eee;
+				font-size: 13px;
+				height: 40px;
+				border-top: 2px solid #eee;
+				border-bottom: 2px solid #ccc;
+			}
+			#menu li {
+				float: left;
+				margin: 0;				
+			}
+			#menu li a {
+				text-decoration: none;
+				display: block;
+				padding: 0 20px;
+				line-height: 40px;
+				color: #666;
+			}
+			#menu li a:hover, #menu li.active a {
+				background-color: #f5f5f5;
+				border-bottom: 2px solid #DDD;
+				color: #999;
+			}
+			#menu_wrapper ul {margin-left: 12px;}
+			#menu_wrapper {padding: 0 16px 0 0; background: url(images/grey.png) no-repeat right;}
+			#menu_wrapper div {float: left; height: 44px; width: 12px; background: url(images/grey.png) no-repeat left;}
+			
+			/* Black Menu */
+			#menu_wrapper.black ul {
+				border-top: 2px solid #333;
+				border-bottom: 2px solid #000;
+				background: #333;}
+			#menu_wrapper.black a {color: #CCC;}
+			#menu_wrapper.black li a:hover, #menu_wrapper.black li.active a {color: #999; background: #555; border-bottom: 2px solid #444;}
+			#menu_wrapper.black {background: url(images/black.png) no-repeat right;}
+			#menu_wrapper.black div {background: url(images/black.png) no-repeat left;}
+			
+			/* Blue Menu */
+			#menu_wrapper.blue ul {
+				border-top: 2px solid #356AA0;
+				border-bottom: 2px solid #204061;
+				background: #356AA0;}
+			#menu_wrapper.blue a {color: #fff;}
+			#menu_wrapper.blue li a:hover, #menu_wrapper.blue li.active a {color: #90CDFF; background: #3D7BBB; border-bottom: 2px solid #356AA0;}
+			#menu_wrapper.blue {background: url(images/blue.png) no-repeat right;}
+			#menu_wrapper.blue div {background: url(images/blue.png) no-repeat left;}
+			
+			/* Red Menu */
+			#menu_wrapper.red ul {
+				border-top: 2px solid #660000;
+				border-bottom: 2px solid #450000;
+				background: #660000;}
+			#menu_wrapper.red a {color: #fff;}
+			#menu_wrapper.red li a:hover, #menu_wrapper.red li.active a {color: #F27F84; background: #990000; border-bottom: 2px solid #660000;}
+			#menu_wrapper.red {background: url(images/red.png) no-repeat right;}
+			#menu_wrapper.red div {background: url(images/red.png) no-repeat left;}
+			
+			/* Orange Menu */
+			#menu_wrapper.orange ul {
+				border-top: 2px solid #d15600;
+				border-bottom: 2px solid #B44500;
+				background: #d15600;}
+			#menu_wrapper.orange a {color: #fff;}
+			#menu_wrapper.orange li a:hover, #menu_wrapper.orange li.active a {color: #FA9B5B; background: #B44500; border-bottom: 2px solid #d15600;}
+			#menu_wrapper.orange {background: url(images/orange.png) no-repeat right;}
+			#menu_wrapper.orange div {background: url(images/orange.png) no-repeat left;}
+		</style>
+	</head>
+	<body>
+		<!-- Grey Menu -->
+		<div id="menu_wrapper" class="grey">
+			<div class="left"></div>
+			<ul id="menu">
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		
+		<!-- Black Menu -->
+		<div id="menu_wrapper" class="black">
+		<div class="left"></div>
+			<ul id="menu">
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		
+		<!-- Blue Menu -->
+		<div id="menu_wrapper" class="blue">
+		<div class="left"></div>
+			<ul id="menu">
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		
+		<!-- Red Menu -->
+		<div id="menu_wrapper" class="red">
+		<div class="left"></div>
+			<ul id="menu">
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		
+		<!-- Orange Menu -->
+		<div id="menu_wrapper" class="orange">
+		<div class="left"></div>
+			<ul id="menu">
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
