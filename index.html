@@ -8,6 +8,25 @@
 		<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 		<script type="text/javascript" src="jquery/jquery-1.4.2.min.js"></script>
 		<script type="text/javascript" src="jquery/jquery.gallerax-0.2.js"></script>
+		<script src="js/jquery-latest.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+                var menu = $("#sidebar");
+                var content = $("#content");
+                menu.live("click",function(e){
+                    e.preventDefault();
+                    var target = e.target;
+                    var href = target.href;
+                    if(href){
+                        $.ajax(href).success(function(data){
+                            content.html(data);
+                            $(".active", menu).removeClass("active");
+                            $(target.parentNode).addClass("active");
+                        });
+                    }
+                });
+            });
+        </script>
 		<style type="text/css">
 		@import "gallery.css";
 		</style>
@@ -48,7 +67,7 @@
 				<h2 class="title">
 					<a href="#">Welcome to this beautiful garden</a>
 				</h2>
-				<div class="entry">
+				<div id="entry">
 					<p>
 						This is 
 						<strong>Moxi</strong>
@@ -64,7 +83,7 @@
 						<div id="content">
 							<div class="post">
 								<h2 class="title">
-									<a href="readerstyle.html">A premonition</a>
+									<a href="#">A premonition</a>
 								</h2>
 								<div class="entry">
 									<p>
@@ -88,23 +107,23 @@
 								<li>
 									<h2>Something about me</h2>
 									<ul>
-										<li>
-											<a href="moxige.html">「莫兮哥」</a>
+										<li class="active">
+											<a href="premonition.html">A premonition</a>
 										</li>
 										<li>
-											<a href="http://weibo.com/zhongmoxi">我 的 微 博</a>
+											<a href="moxige-ajax.html">「莫兮哥」</a>
 										</li>
 										<li>
-											<a href="#">Metus aliquam pellentesque</a>
+											<a href="premonition.html">Metus aliquam pellentesque</a>
 										</li>
 										<li>
-											<a href="#">Suspendisse iaculis mauris</a>
+											<a href="premonition.html">Suspendisse iaculis mauris</a>
 										</li>
 										<li>
-											<a href="#">Urnanet non molestie semper</a>
+											<a href="premonition.html">Urnanet non molestie semper</a>
 										</li>
 										<li>
-											<a href="#">Proin gravida orci porttitor</a>
+											<a href="premonition.html">Proin gravida orci porttitor</a>
 										</li>
 									</ul>
 								</li>
