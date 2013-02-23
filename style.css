@@ -359,6 +359,10 @@ a:hover {
 	padding: 0;
 }
 
+#sidebar li.active a {
+	font-size: 1.5em
+}
+
 #sidebar li ul {
 	margin: 0px 0px;
 	padding-bottom: 30px;
